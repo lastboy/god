@@ -1,4 +1,4 @@
-var _typedas = require("typedas")
+//var _typedas = require("typedas") 
 
 module.exports = function() {
 
@@ -7,13 +7,13 @@ module.exports = function() {
         getParams: function(keys, obj) {
             var result = {};
 
-            if ( (obj && keys && _typedas.isArray(keys)) ) {
-
-                keys.forEach(function(key){
-                    result[key] = ( (key in obj) ? obj[key]: undefined);
-                });
-
-            }
+//            if ( (obj && keys && _typedas.isArray(keys)) ) {
+//
+//                keys.forEach(function(key){
+//                    result[key] = ( (key in obj) ? obj[key]: undefined);
+//                });
+//
+//            }
 
             return result;
         }

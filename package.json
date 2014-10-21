@@ -1,7 +1,7 @@
 {
   "name": "god",
   "description": "[WIP] The project is not ready just yet, I'll update the readme when it's done.",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "author": "Arik Lewin (https://github.com/lastboy)",
   "homepage": "https://github.com/lastboy",
   "repository": {
@@ -22,41 +22,11 @@
     "test": "node ./test/test.js"
   },
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "keywords": [],
   "dependencies": {
-    "mobilerunner": "latest",
-    "fs.extra": "~1.2.1",
-    "typedas": "~1.0.0",
-    "log": "~1.4.0",
-    "nopt": "~2.2.0",
-    "properties": "~0.3.3",
-    "line-reader": "~0.2.3",
-    "string-format": "~0.2.1",
-    "js-beautify": "~1.4.0",
-    "watch": "~0.8.0",
-    "date-format-lite": "~0.1.5",
-    "line-by-line": "~0.1.1",
-    "underscore": "~1.5.1",
-    "minimatch": "~0.2.12",
-    "uglify-js": "~2.4.0",
-    "jshint": "~2.1.10",
-    "express": "~3.4.4",
-    "test-model-reporter": "~0.1.0",
-    "Faker": "~0.5.11",
-    "js.utils": "~0.1.9",
-    "require-mapper": "~0.0.3",
-    "glob": "~3.2.7",
-    "my-ip": "~1.1.0",
-    "json-lint": "~0.1.0",
-    "prompt": "~0.2.12",
-    "jetty": "~0.2.1",
-    "winston": "~0.7.2",
-    "wrench": "~1.5.8",
-    "contribute": "~0.0.3",
-    "colors": "~0.6.2",
-    "autonpm": "~0.1.2"
+
   },
   "devDependencies": {},
   "optionalDependencies": {},
