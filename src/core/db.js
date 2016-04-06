@@ -1,35 +1,42 @@
 var _loki = require('lokijs'),
-	_db;
+	_db, _data;
+_db = new _loki('data/god.json');
 
-_db = new _loki('test.json');
-
-_db.loadDatabase({}, function () {
-	var users = _db.getCollection('users');
-  	if (!users) {
-  		var users = _db.addCollection('users');
-		users.insert({
-		  name: 'joe'
-		});
-		users.insert({
-		  name: 'john'
-		});
-		users.insert({
-		  name: 'jack'
-		});
-
-		_db.saveDatabase();
-  	} else {
-  		console.debug(users.data);
-
-  	}
-});
 
 module.exports = function() {
 
-   
-    return {
+	var _module;
 
-       
-    };
+	_module = {
+
+		db: _db,
+
+		data: function() {
+			return _data;
+		},
+
+		init: function(def) {
+
+			_db.loadDatabase({}, function () {
+
+				_data = _db.getCollection('beings');	
+				console.debug(" DB god's beings loaded successfully - items:", (_data ? (_data.data.length) : "0"));
+
+				if (_data && _data.data) {
+//					_data = _data.data;
+
+				} else {
+					_data = _db.addCollection('beings');
+					console.debug(" DB data collection initialized ");
+
+				} 
+
+				def.resolve();
+
+			});	
+		}
+	};
+
+	return _module;
 
 }();

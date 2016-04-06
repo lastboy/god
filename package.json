@@ -27,7 +27,8 @@
   "keywords": [],
   "dependencies": {
     "lokijs": "^1.3.16",
-    "nopt": "^3.0.6"
+    "nopt": "^3.0.6",
+    "q": "^1.4.1"
   },
   "devDependencies": {},
   "optionalDependencies": {},
